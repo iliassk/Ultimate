@@ -8,7 +8,7 @@ function TodoController() {
     },
     {
       title: 'Complete Ultimate AngularJS Pro',
-      completed: false
+      completed: true
     },
     {
       title: 'Complete Ultimate AngularJS Performance',
