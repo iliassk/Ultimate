@@ -11,11 +11,18 @@
   </head>
   <body>
     <div class="todo" ng-controller="TodoController as $ctrl">
+      <form class="todo__form" ng-submit="$ctrl.addTodo()">
+        <input placeholder="Enter a new task !" type="text" ng-model="$ctrl.newTodoTitle" />
+      </form>
       <ul class="todo__list">
         <li class="todo__list" ng-repeat="task in $ctrl.tasksList">
           <input id="todo-{{$index}}" type="checkbox" ng-model="task.completed">
           <label class="toggle" for="todo-{{$index}}"></label>
-          <p>{{ task.title }}</p>
+          <p ng-dblclick="editTodo = true;" ng-hide="editTodo">{{ task.title }}</p>
+          <input ng-show="editTodo" type="text" ng-model="task.title" ng-blur="editTodo = false;" />
+          <a href="" ng-click="$ctrl.removeTodo(task, $index)">
+            &#215
+          </a>
         </li>
       </ul>
     </div>
