@@ -23,14 +23,16 @@
           <a href="" ng-click="$ctrl.removeTodo(task, $index)">
             &#215
           </a>
-          <div class="todo__remaining">
-            <span>
-              {{ Start checking todos ! }}
-            </span>
-          </div>
-
         </li>
       </ul>
+      <p class="todo__remaining">
+        <span ng-show="$ctrl.getRemainingTodos().length > 0">
+          You have {{$ctrl.getRemainingTodos().length}} of {{$ctrl.tasksList.length}} remaining todo tasks
+        </span>
+        <span ng-show="$ctrl.getRemainingTodos().length === 0">
+          You are super productive !
+        </span>
+      </p>
     </div>
   </body>
 </html>

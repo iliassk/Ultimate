@@ -30,8 +30,15 @@ function TodoController() {
     $ctrl.tasksList.splice(index, 1);
   };
 
+  function getRemainingTodos() {
+    return $ctrl.tasksList.filter(function(todo) {
+      return !todo.completed;
+    });
+  };
+
   $ctrl.addTodo = addTodo;
   $ctrl.removeTodo = removeTodo;
+  $ctrl.getRemainingTodos = getRemainingTodos;
 
 };
 
