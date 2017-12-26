@@ -1,4 +1,4 @@
-function MyAutoFocusDirective() {
+function MyAutoFocusDirective($timeout) {
   return {
     restrict: 'A',
     scope: false,
@@ -7,7 +7,11 @@ function MyAutoFocusDirective() {
         if(!newValue) {
           return;
         }
-        setTimeout(function() {
+        //setTimeout (js) or $timeout (angularjs) do almost the same thing
+        //they make sure to push the action element[0].focus(); at the end of the browser queue
+        //this allows the browser to do all its tasks (rendering DOM, executing JS ...) beforehand
+        //and after 0s, it executes its last task, the focus action
+        $timeout(function() {
           element[0].focus();
         }, 0)
       });
