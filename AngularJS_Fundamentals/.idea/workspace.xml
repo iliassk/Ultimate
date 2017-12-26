@@ -29,7 +29,7 @@
       <file leaf-file-name="myAutoFocus.directive.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/seed/js/myAutoFocus.directive.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
+            <state relative-caret-position="202">
               <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
               <folding />
             </state>
@@ -147,7 +147,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="4" />
     <option name="y" value="441" />
     <option name="width" value="1657" />
@@ -171,6 +171,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,7 +206,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -256,15 +256,16 @@
       <workItem from="1514056683708" duration="3227000" />
       <workItem from="1514149463346" duration="3464000" />
       <workItem from="1514279895853" duration="10541000" />
-      <workItem from="1514318640129" duration="13000" />
+      <workItem from="1514318640129" duration="162000" />
+      <workItem from="1514318853950" duration="162000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19372000" />
+    <option name="totallyTimeSpent" value="19683000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25224748" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -302,6 +303,74 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/seed/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed/js/myTodoApp.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <marker date="1514293598086" expanded="true" signature="159:1465" ph="..." />
+            <marker date="1514293598086" expanded="true" signature="219:326" ph="..." />
+            <marker date="1514293598086" expanded="true" signature="356:1107" ph="..." />
+            <marker date="1514293598086" expanded="true" signature="456:1095" ph="..." />
+            <marker date="1514293598086" expanded="true" signature="511:606" ph="..." />
+            <marker date="1514293598086" expanded="true" signature="733:777" ph="..." />
+            <marker date="1514293598086" expanded="true" signature="826:984" ph="..." />
+            <marker date="1514293598086" expanded="true" signature="1048:1081" ph="..." />
+            <marker date="1514293598086" expanded="true" signature="1141:1454" ph="..." />
+            <marker date="1514293598086" expanded="true" signature="1203:1326" ph="..." />
+            <marker date="1514293598086" expanded="true" signature="1390:1443" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2058">
+          <caret line="98" column="23" lean-forward="false" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed/js/todo.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed/js/todo.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed/js/myAutoFocus.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/seed/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -549,7 +618,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/seed/js/myAutoFocus.directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
+        <state relative-caret-position="202">
           <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding />
         </state>
