@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="434dbe07-e019-482f-88ef-0107fdfd1b1d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../AngularJS_Pro" afterPath="$PROJECT_DIR$/../AngularJS_Pro" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -256,12 +255,12 @@
       <workItem from="1514056396497" duration="269000" />
       <workItem from="1514056683708" duration="3227000" />
       <workItem from="1514149463346" duration="3464000" />
-      <workItem from="1514279895853" duration="9895000" />
+      <workItem from="1514279895853" duration="9946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18713000" />
+    <option name="totallyTimeSpent" value="18764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
