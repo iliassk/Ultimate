@@ -13,7 +13,7 @@ function MyAutoFocusDirective($timeout) {
         //and after 0s, it executes its last task, the focus action
         $timeout(function() {
           element[0].focus();
-        }, 0)
+        });
       });
     }
   }
