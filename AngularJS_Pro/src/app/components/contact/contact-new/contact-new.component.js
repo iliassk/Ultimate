@@ -39,7 +39,7 @@ angular
     $stateProvider
       .state('new', {
         parent: 'app',
-        url: '/contact/new',
+        url: '/new',
         component: 'contactNew'
       })
   })

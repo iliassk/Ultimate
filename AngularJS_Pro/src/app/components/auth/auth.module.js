@@ -26,10 +26,7 @@ angular
           return !!(state.data && state.data.requireAuth)
       }
     }, function(transition) {
-        if(!AuthService.isAuthenticated()) {
-          return $state.target('auth.login');
-        }
-        AuthService
+        return AuthService
           .requireAuthentication()
           .catch(function () {
             return $state.target('auth.login');

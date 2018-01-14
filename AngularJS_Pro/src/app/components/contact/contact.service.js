@@ -1,14 +1,13 @@
 function ContactService(AuthService, $firebaseRef, $firebaseArray, $firebaseObject) {
-  var self = this;
-  self.ref = $firebaseRef.contacts;
-  self.uid = AuthService.getUser().uid;
+  var ref = $firebaseRef.contacts;
+  var uid = AuthService.getUser().uid;
 
   return {
     createContact: function (contact) {
-      return $firebaseArray(self.ref.child(self.uid)).$add(contact);
+      return $firebaseArray(ref.child(uid)).$add(contact);
     },
     getContactById: function (id) {
-      return $firebaseObject(self.ref.child(self.uid).child(id));
+      return $firebaseObject(ref.child(uid).child(id));
     },
     updateContact: function(contact) {
       return contact.$save();

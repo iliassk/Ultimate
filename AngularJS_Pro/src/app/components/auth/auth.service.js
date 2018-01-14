@@ -1,56 +1,44 @@
 function AuthService($firebaseAuth) {
-  'ngInject';
-
-  var self = this;
-
-  self.firebaseAuth = $firebaseAuth();
-  self.authData = null;
-
+  var auth = $firebaseAuth();
+  var authData = null;
   function storeAuthData(response) {
-    self.authData = response;
-    return self.authData;
+    authData = response;
+    return authData;
   }
-
-  function removeAuthData() {
-    self.authData = null;
+  function onSignIn(user) {
+    authData = user;
+    return auth.$requireSignIn();
   }
-
-  function hasToLogin() {
-    return self.firebaseAuth.$requireSignIn();
+  function clearAuthData() {
+    authData = null;
   }
-
-  self.register = function(user) {
-    return self.firebaseAuth
-      .$createUserWithEmailAndPassword(user.email, user.password)
-      .then(storeAuthData)
-  };
-
-  self.login = function(user) {
-    return self.firebaseAuth
+  this.login = function (user) {
+    return auth
       .$signInWithEmailAndPassword(user.email, user.password)
-      .then(storeAuthData)
+      .then(storeAuthData);
   };
-
-  self.requireAuthentication = function(user) {
-    return self.firebaseAuth
-      .$waitForSignIn(user)
-      .then(hasToLogin)
+  this.register = function (user) {
+    return auth
+      .$createUserWithEmailAndPassword(user.email, user.password)
+      .then(storeAuthData);
   };
-
-  self.getUser = function() {
-    return self.authData;
-  };
-
-  self.isAuthenticated = function() {
-    return !!(self.authData);
-  };
-
-  self.logout = function() {
-    return self.firebaseAuth
+  this.logout = function () {
+    return auth
       .$signOut()
-      .then(removeAuthData)
+      .then(clearAuthData);
   };
-
+  this.requireAuthentication = function () {
+    return auth
+      .$waitForSignIn().then(onSignIn);
+  };
+  this.isAuthenticated = function () {
+    return !!authData;
+  };
+  this.getUser = function () {
+    if (authData) {
+      return authData;
+    }
+  };
 }
 
 angular
