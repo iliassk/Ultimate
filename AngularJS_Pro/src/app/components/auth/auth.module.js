@@ -22,20 +22,23 @@ angular
   })
   .run(function(AuthService, $state, $transitions) {
     $transitions.onStart({
-      to: function(state) {
+      to: function (state) {
           return !!(state.data && state.data.requireAuth)
       }
     }, function(transition) {
+        if(!AuthService.isAuthenticated()) {
+          return $state.target('auth.login');
+        }
         AuthService
           .requireAuthentication()
-          .catch(function() {
+          .catch(function () {
             return $state.target('auth.login');
           })
     });
 
     $transitions.onStart({
       to: 'auth.*'
-    }, function(transition) {
+    }, function (transition) {
         if(AuthService.isAuthenticated()) {
           return $state.target('app');
         }
