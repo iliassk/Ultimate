@@ -1,0 +1,13 @@
+<div class="auth">
+  <auth-form
+    user="$ctrl.user"
+    error="{{$ctrl.error}}"
+    button="Login"
+    on-submit="$ctrl.loginUser($event)"
+  ></auth-form>
+</div>
+<div class="auth__info">
+  <a ui-sref="register">
+    Don't have an account ? Register here.
+  </a>
+</div>

@@ -3,4 +3,9 @@ angular
     'common',
     'components',
     'templates'
-  ]);
+  ])
+  .config(function($locationProvider) {
+    'ngInject';
+
+    $locationProvider.hashPrefix('');
+  });

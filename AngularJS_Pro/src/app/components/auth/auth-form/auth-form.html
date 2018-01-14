@@ -1,0 +1,29 @@
+<form name="authForm" ng-submit="$ctrl.submitForm()" novalidate>
+  <label>
+    <input
+      name="email"
+      type="email"
+      placeholder="Enter your username"
+      ng-model="$ctrl.user.email"
+      required="required"
+    />
+  </label>
+  <label>
+    <input
+      name="password"
+      type="password"
+      placeholder="Enter your password"
+      ng-model="$ctrl.user.password"
+      required="required"
+    />
+  </label>
+  <div class="auth-button">
+    <button type="submit" ng-disabled="authForm.$invalid">
+      {{$ctrl.button}}
+    </button>
+  </div>
+  <div ng-if="$ctrl.error">
+    {{$ctrl.error}}
+  </div>
+</form>
+
