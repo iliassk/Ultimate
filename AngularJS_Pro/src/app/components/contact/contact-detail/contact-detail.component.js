@@ -41,11 +41,17 @@ function ContactDetailController() {
       }
     });
   }
+  function updateTag(event) {
+    $ctrl.contact.tag = event.tag;
+
+    $ctrl.edit();
+  }
 
   $ctrl.$onInit = $onInit;
   $ctrl.add = add;
   $ctrl.edit = edit;
   $ctrl.remove = remove;
+  $ctrl.updateTag = updateTag;
 
 }
 

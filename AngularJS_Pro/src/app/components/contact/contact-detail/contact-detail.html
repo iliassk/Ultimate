@@ -153,6 +153,13 @@
           }">
       </div>
     </div>
+
+    <contact-tag
+      tag="$ctrl.contact.tag"
+      on-change-tag="$ctrl.updateTag($event)">
+
+    </contact-tag>
+
     <div ng-if="$ctrl.isNewContact">
       <button
         ng-disabled="contactDetailForm.$invalid"
