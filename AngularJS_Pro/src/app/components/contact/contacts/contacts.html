@@ -1,0 +1,11 @@
+<div class="contacts">
+  <ul class="contacts-list">
+    <li ng-repeat="contact in $ctrl.contacts">
+      {{ contact }}
+    </li>
+  </ul>
+  <div ng-if="!$ctrl.contacts.length" class="contacts__empty">
+    <i class="material-icons">face</i>
+    There's no one here yet !
+  </div>
+</div>

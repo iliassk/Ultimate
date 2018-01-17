@@ -25,6 +25,7 @@ angular
   .config(function($stateProvider) {
     $stateProvider
       .state('app', {
+        redirectTo: 'contacts',
         url: '/app',
         data: {
           requireAuth: true
