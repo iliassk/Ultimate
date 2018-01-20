@@ -27,9 +27,7 @@ function ContactEditComponent($state, $window, ContactService, cfpLoadingBar) {
       ContactService
         .deleteContact(event.contact)
         .then(function () {
-          $state.go('contacts', {
-            filter: 'none'
-          });
+          $state.go('app');
         })
     }
   }

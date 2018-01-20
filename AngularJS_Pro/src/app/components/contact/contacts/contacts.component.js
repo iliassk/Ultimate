@@ -34,7 +34,7 @@ angular
       .state('contacts', {
         parent: 'app',
         url: '/contacts?filter',
-        param: {
+        params: {
           filter: 'none'
         },
         component: 'contacts',
