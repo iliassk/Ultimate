@@ -17,7 +17,7 @@ function RegisterController(AuthService, $state) {
   };
 
   $ctrl.registerUser = function(event) {
-    AuthService.register(event.user)
+    return AuthService.register(event.user)
       .then(function() {
         $ctrl.error = null;
         $state.go('app');

@@ -23,7 +23,7 @@ function ContactNewComponent($state, ContactService) {
   };
 
   function addContact(event) {
-    ContactService
+    return ContactService
       .createContact(event.contact)
       .then(function(response) {
         console.log(response);

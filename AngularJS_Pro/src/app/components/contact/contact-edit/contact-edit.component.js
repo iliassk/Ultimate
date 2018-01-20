@@ -13,7 +13,7 @@ function ContactEditComponent($state, $window, ContactService, cfpLoadingBar) {
 
   function editContact(event) {
     cfpLoadingBar.start();
-    ContactService
+    return ContactService
       .updateContact(event.contact)
       .then(function () {
         cfpLoadingBar.complete();
@@ -24,7 +24,7 @@ function ContactEditComponent($state, $window, ContactService, cfpLoadingBar) {
   }
   function removeContact(event) {
     if($window.confirm('Do you want to delete ' + event.contact.name + ' from your contacts ?')) {
-      ContactService
+      return ContactService
         .deleteContact(event.contact)
         .then(function () {
           $state.go('app');
