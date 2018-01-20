@@ -10,19 +10,34 @@ function appSidebarController() {
 
   $ctrl.contactTags = [{
     label: 'All contacts',
-    icon: 'star'
+    icon: 'star',
+    filterParam: {
+      filter: 'none'
+    }
   }, {
     label: 'Friends',
-    icon: 'people'
+    icon: 'people',
+    filterParam: {
+      filter: 'friends'
+    }
   }, {
     label: 'Family',
-    icon: 'child_care'
+    icon: 'child_care',
+    filterParam: {
+      filter: 'family'
+    }
   }, {
     label: 'Acquaintances',
-    icon: 'accessibility'
+    icon: 'accessibility',
+    filterParam: {
+      filter: 'acquaintances'
+    }
   }, {
     label: 'Following',
-    icon: 'remove_red_eye'
+    icon: 'remove_red_eye',
+    filterParam: {
+      filter: 'following'
+    }
   }];
 }
 
